@@ -1,7 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Vinyl&display=swap');
+
+
+
 *{
-    
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
 }
 
+body{
+    font-family: "Open Sans";
+}
 
 
 
@@ -33,3 +49,96 @@
       max-width: 1160px;
     }
   }
+
+  .header{
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 20px 20px 50px #dbd9d9;
+        border-radius: 6px;
+        
+        .logo{
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+            h1{
+               font-style:italic;
+               font-size: 30px;
+               font-weight: normal;
+               letter-spacing: 1.5;
+
+        }
+        
+    }
+    ul{
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            li{
+                a{
+                    padding: 20px;
+                    color: #000;
+                    font-size: 17px;
+                    font-weight: normal;
+
+                }
+            }
+        }
+        .mega{
+            background-color: #4e1f036c;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: none;
+            i{
+                color: #fff;
+                font-size: 20px;
+            
+            }
+
+        }
+}
+  }
+
+  @media(max-width : 765px){
+    .header{
+      
+        .container{
+            position: relative;
+            .logo{
+               margin: auto;
+            }
+            ul{
+                position: absolute;
+                top: 130px;
+                background-color: #5c5c5c31;
+               flex-direction: column;
+               padding: 20px 0;
+               gap: 30px;
+               display: flex;
+               align-items: start;
+               width: 100%;
+               right: 5000px;
+               transition: .8s;
+               li{
+                   
+                a{
+                    font-size: 20px;
+                }
+               }
+                
+            }
+            .mega{
+                display: block;
+            }
+        }
+    }
+  }
+  
+
